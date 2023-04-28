@@ -1,4 +1,5 @@
 import React from "react";
+import { SlideInAnimation } from "./SlideInAnimation";
 
 const Cards = () => {
   const Cards = [
@@ -43,10 +44,10 @@ const Cards = () => {
   ];
   return (
     <div className="d-flex card-containers justify-content-center">
-      {Cards.map((item) => {
+      {Cards.map((item, index) => {
         const { title, price, monthly, button, key } = item;
         return (
-          <div key={title} className="bg-white p-3 card m-3">
+          <SlideInAnimation direction={index % 2 ? "left": "right"} key={title} className="bg-white p-3 card m-3">
             <p className="text-center fw-bold">{title}</p>
             <h4 className="text-center ">{price}</h4>
             {monthly && (
@@ -60,7 +61,7 @@ const Cards = () => {
                 return <p className="mt-2 fw-bold">&#x2705; {child}</p>;
               })}
             </div>
-          </div>
+          </SlideInAnimation>
         );
       })}
     </div>

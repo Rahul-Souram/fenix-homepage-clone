@@ -1,10 +1,11 @@
 import React from "react";
 import firstImage from "../images/firstImage.png";
+import { SlideInAnimation } from "./SlideInAnimation";
 
 const FirstComponent = () => {
   return (
     <div className="d-md-flex first-bg p-3 mt-4">
-      <div className=" text-white content m-2">
+      <SlideInAnimation className=" text-white content m-2">
         <h1 className=" text-start title">
           Artificial Intelligence. Real Insights.
         </h1>
@@ -22,10 +23,10 @@ const FirstComponent = () => {
             Log In
           </button>
         </div>
-      </div>
-      <div className="first-img m-2">
+      </SlideInAnimation>
+      <SlideInAnimation direction="right" className="first-img m-2">
         <img src={firstImage} alt="firstImage" />
-      </div>
+      </SlideInAnimation>
     </div>
   );
 };

@@ -2,6 +2,8 @@ import React from "react";
 import img1 from "../images/fenix-image-1.png";
 import img2 from "../images/fenix-image-2.png";
 import img3 from "../images/fenix-image-3.png";
+import { SlideTop } from "./SlideTop";
+import { SlideInAnimation } from "./SlideInAnimation";
 
 const ForthComponent = () => {
   const RealCards = [
@@ -21,15 +23,23 @@ const ForthComponent = () => {
   return (
     <div className="fourth pt-5 pb-5 m-3">
       <div className="text-dark fourth-summary">
-        <h1 className="title text-center">Real-time, interactive, global data</h1>
+        <SlideTop direction="top">
+          <h1 className="title text-center ps-2 pe-2">
+            Real-time, interactive, global data
+          </h1>
+        </SlideTop>
         <div className="mt-4 d-flex card-containers justify-content-center">
-          {RealCards.map((item) => {
+          {RealCards.map((item, index) => {
             const { title, img } = item;
             return (
-              <div className="card m-3 p-2">
+              <SlideInAnimation
+                direction={index % 2 ? "left" : "right"}
+                className="card m-3 p-2"
+                durationTime={2}
+              >
                 <p className="pb-2 fw-bold">{title}</p>
                 <img src={img} alt={title} />
-              </div>
+              </SlideInAnimation>
             );
           })}
         </div>
