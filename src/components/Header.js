@@ -5,28 +5,42 @@ const Header = () => {
   const HeaderLinks = ["About Us", "Contact Us", "Pricing Packages"];
   return (
     <div className="header-wrapper">
-      <div className="d-flex justify-content-between align-items-center header-container">
-        <a href="/">
-          <img src={FenixLogo} alt="logo" />
-        </a>
-        <ul className=" header-list">
-          {HeaderLinks.map((item) => {
-            return <li className="header-list-item">
-                          <button type="button" className="btn text-white">{item}</button>
-                </li>;
-          })}
-          <li className="header-btn">
-            <button type="button" className="btn bg-green">Get Started Now</button>
-          </li>
-          <li className="header-btn">
-          <button type="button" className="btn text-white">Get Started Now</button>
-          </li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a href="/" class="navbar-brand">
+            <img src={FenixLogo} alt="Logo" />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler bg-white"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav fs-5">
+              {HeaderLinks.map((item) => {
+                return (
+                  <li class="nav-item nav-link text-white" key={item}>
+                    {item}
+                  </li>
+                );
+              })}
+            </div>
+            <div class="navbar-nav ms-auto">
+              <a href="/" class="nav-item nav-link bg-green">
+                Get Started Now
+              </a>
+              <a href="/" class="nav-item nav-link text-white">
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 };
 
 export default Header;
-
-

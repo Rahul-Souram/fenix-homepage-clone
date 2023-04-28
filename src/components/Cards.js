@@ -50,14 +50,14 @@ const Cards = () => {
             <p className="text-center">{title}</p>
             <h4 className="text-center">{price}</h4>
             {monthly && (
-              <button className="btn bg-green text-center">{monthly}</button>
+              <button className="btn bg-green monthly text-center">{monthly}</button>
             )}
-            <button type="button" className="btn start-btn">
+            <button type="button" className="btn  mb-3 btn-outline-success">
               {button}
             </button>
             <div>
               {key.map((child) => {
-                return <p className="mt-2">{child}</p>;
+                return <p className="mt-2">&#x2705; {child}</p>;
               })}
             </div>
           </div>

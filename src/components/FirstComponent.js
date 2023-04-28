@@ -3,8 +3,8 @@ import firstImage from "../images/firstImage.png";
 
 const FirstComponent = () => {
   return (
-    <div className="d-md-flex first-bg">
-      <div className=" text-white content">
+    <div className="d-md-flex first-bg p-3">
+      <div className=" text-white content m-2">
         <h1 className=" text-start title">
           Artificial Intelligence. Real Insights.
         </h1>
@@ -23,7 +23,7 @@ const FirstComponent = () => {
           </button>
         </div>
       </div>
-      <div className="first-img">
+      <div className="first-img m-2">
         <img src={firstImage} alt="firstImage" />
       </div>
     </div>

@@ -10,7 +10,7 @@ const Footer = () => {
   ];
   
   return (
-    <div className="footer p-2">
+    <div className="footer p-2 mt-5 mb-2 text-white">
       <ul className="d-flex ">
         {footerLinks.map((item) => {
           return <li key={item} className="me-2 d-flex">{item} <span className="ms-1">|</span></li>;

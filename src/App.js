@@ -1,7 +1,6 @@
 import Cards from "./components/Cards";
 import FirstComponent from "./components/FirstComponent";
 import Footer from "./components/Footer";
-import SecondComponent from "./components/SecondComponent";
 import ThirdComponent from "./components/ThirdComponent";
 import FourthComponent from "./components/FourthComponent";
 import Final from "./components/Final";
@@ -9,11 +8,10 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container-bg">
+    <div className=" container-bg App">
+      <div className="containers">
         <Header />
         <FirstComponent />
-        <SecondComponent />
         <ThirdComponent />
         <FourthComponent />
         <Cards />

@@ -19,16 +19,15 @@ const ForthComponent = () => {
     },
   ];
   return (
-    <div className="fourth">
-      <div className="fourth-bg"></div>
+    <div className="fourth pt-5 pb-5 m-3">
       <div className="text-dark fourth-summary">
-        <h1 className="title">Real-time, interactive, global data</h1>
-        <div className="mt-4 d-lg-flex justify-content-between real-time-cards-container ">
+        <h1 className="title text-center">Real-time, interactive, global data</h1>
+        <div className="mt-4 d-flex card-containers justify-content-center">
           {RealCards.map((item) => {
             const { title, img } = item;
             return (
-              <div className="real-time-cards">
-                <p>{title}</p>
+              <div className="card m-3 p-2">
+                <p className="pb-2">{title}</p>
                 <img src={img} alt={title} />
               </div>
             );
