@@ -3,7 +3,7 @@ import firstImage from "../images/firstImage.png";
 
 const FirstComponent = () => {
   return (
-    <div className="d-md-flex first-bg p-3">
+    <div className="d-md-flex first-bg p-3 mt-4">
       <div className=" text-white content m-2">
         <h1 className=" text-start title">
           Artificial Intelligence. Real Insights.
@@ -15,10 +15,10 @@ const FirstComponent = () => {
           giving an accurate global map of explosive ordnance risk.
         </div>
         <div className="mt-3">
-          <button type="button" className="btn bg-green">
+          <button type="button" className="btn bg-green fw-bold">
             Get Started Now
           </button>
-          <button type="button" className="btn text-white ">
+          <button type="button" className="btn text-white fw-bold">
             Log In
           </button>
         </div>

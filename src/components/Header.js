@@ -4,35 +4,35 @@ import FenixLogo from "../images/fenix-logo.png";
 const Header = () => {
   const HeaderLinks = ["About Us", "Contact Us", "Pricing Packages"];
   return (
-    <div className="header-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand">
+    <div classNameName="header-wrapper">
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="container-fluid">
+          <a href="/" className="navbar-brand">
             <img src={FenixLogo} alt="Logo" />
           </a>
           <button
             type="button"
-            class="navbar-toggler bg-white"
+            className="navbar-toggler bg-white"
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav fs-5">
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className="navbar-nav fs-5">
               {HeaderLinks.map((item) => {
                 return (
-                  <li class="nav-item nav-link text-white" key={item}>
+                  <li className="nav-item nav-link text-white fw-bold" key={item}>
                     {item}
                   </li>
                 );
               })}
             </div>
-            <div class="navbar-nav ms-auto">
-              <a href="/" class="nav-item nav-link bg-green">
+            <div className="navbar-nav ms-auto">
+              <a href="/" className="nav-item nav-link bg-green">
                 Get Started Now
               </a>
-              <a href="/" class="nav-item nav-link text-white">
+              <a href="/" className="nav-item nav-link text-white fw-bold">
                 Login
               </a>
             </div>

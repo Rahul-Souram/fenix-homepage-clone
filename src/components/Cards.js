@@ -21,7 +21,7 @@ const Cards = () => {
     },
     {
       title: "Pro",
-      price: "24.99",
+      price: "$24.99",
       monthly: "Monthly",
       button: "Get Started Now",
       key: ["All Benefits of Free Trial Access", "Team Management"],
@@ -29,7 +29,7 @@ const Cards = () => {
     {
       title: "Enterprise",
       price: "For Larger Organisations",
-      monthly: "",
+      monthly: "yearly",
       button: "Get In Touch Now",
       key: [
         "All Benefits of Pro Access",
@@ -47,17 +47,17 @@ const Cards = () => {
         const { title, price, monthly, button, key } = item;
         return (
           <div key={title} className="bg-white p-3 card m-3">
-            <p className="text-center">{title}</p>
-            <h4 className="text-center">{price}</h4>
+            <p className="text-center fw-bold">{title}</p>
+            <h4 className="text-center ">{price}</h4>
             {monthly && (
               <button className="btn bg-green monthly text-center">{monthly}</button>
             )}
-            <button type="button" className="btn  mb-3 btn-outline-success">
+            <button type="button" className="btn fw-bold  mb-3 btn-outline-success">
               {button}
             </button>
-            <div>
+            <div className="points-container">
               {key.map((child) => {
-                return <p className="mt-2">&#x2705; {child}</p>;
+                return <p className="mt-2 fw-bold">&#x2705; {child}</p>;
               })}
             </div>
           </div>

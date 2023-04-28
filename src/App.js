@@ -5,6 +5,7 @@ import ThirdComponent from "./components/ThirdComponent";
 import FourthComponent from "./components/FourthComponent";
 import Final from "./components/Final";
 import Header from "./components/Header";
+import LineGraph from "./components/LineGraph";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="containers">
         <Header />
         <FirstComponent />
+        <LineGraph />
         <ThirdComponent />
         <FourthComponent />
         <Cards />

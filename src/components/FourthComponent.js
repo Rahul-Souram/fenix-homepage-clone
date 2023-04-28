@@ -27,7 +27,7 @@ const ForthComponent = () => {
             const { title, img } = item;
             return (
               <div className="card m-3 p-2">
-                <p className="pb-2">{title}</p>
+                <p className="pb-2 fw-bold">{title}</p>
                 <img src={img} alt={title} />
               </div>
             );
