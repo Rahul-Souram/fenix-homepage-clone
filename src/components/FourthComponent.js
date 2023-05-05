@@ -24,7 +24,7 @@ const ForthComponent = () => {
     <div className="fourth pt-5 pb-5 m-3">
       <div className="text-dark fourth-summary">
         <SlideTop direction="top">
-          <h1 className="title text-center ps-2 pe-2">
+          <h1 className="title text-center ps-2 pe-2 text-white">
             Real-time, interactive, global data
           </h1>
         </SlideTop>

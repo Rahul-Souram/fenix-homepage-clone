@@ -47,7 +47,7 @@ const Cards = () => {
       {Cards.map((item, index) => {
         const { title, price, monthly, button, key } = item;
         return (
-          <SlideInAnimation direction={index % 2 ? "left": "right"} key={title} className="bg-white p-3 card m-3">
+          <SlideInAnimation direction={index % 2 ? "left": "right"} key={title} className="bg-white pe-4 ps-4 card m-3">
             <p className="text-center fw-bold">{title}</p>
             <h4 className="text-center ">{price}</h4>
             {monthly && (
@@ -58,7 +58,7 @@ const Cards = () => {
             </button>
             <div className="points-container">
               {key.map((child) => {
-                return <p className="mt-2 fw-bold">&#x2705; {child}</p>;
+                return <p className="mt-2 fw-bold">&#10004; {child}</p>;
               })}
             </div>
           </SlideInAnimation>

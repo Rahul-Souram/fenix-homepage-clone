@@ -31,7 +31,6 @@
 }
 .second {
   border-radius: 10px;
-  box-shadow: 0 5px 7px gray;
 }
 
 .third {
@@ -41,13 +40,11 @@
   &-title {
     max-width: 15rem;
   }
-  background: #00213b;
   @extend .second;
 }
 
 .fourth {
   @extend .second;
-  background: #e3e9ec;
 }
 
 .final-bg {
@@ -76,7 +73,7 @@
 }
 
 .container-bg {
-  background: linear-gradient(176deg, #3176c0 4%, #343434 66%);
+  background: linear-gradient(176deg, #3176c0 4%, #00213b 66%);
   overflow: hidden;
 }
 

@@ -19,16 +19,16 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav fs-5">
+            <div className="navbar-nav fs-5 ms-auto">
               {HeaderLinks.map((item) => {
                 return (
-                  <li className="nav-item nav-link text-white fw-bold" key={item}>
+                  <li className="nav-item nav-link text-white" key={item}>
                     {item}
                   </li>
                 );
               })}
             </div>
-            <div className="navbar-nav ms-auto">
+            <div className="navbar-nav">
               <a href="/" className="nav-item nav-link bg-green">
                 Get Started Now
               </a>

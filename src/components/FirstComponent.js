@@ -6,10 +6,10 @@ const FirstComponent = () => {
   return (
     <div className="d-md-flex first-bg p-3 mt-4">
       <SlideInAnimation className=" text-white content m-2">
-        <h1 className=" text-start title">
+        <h1 className=" text-start title fs-1">
           Artificial Intelligence. Real Insights.
         </h1>
-        <div className="fs-4 text-start">
+        <div className="fs-5 text-start mt-4 mb-4">
           Fenix Insight is an advanced insight engine purpose built for EOD
           operations, training and risk management. It incorporates an
           artificial intelligence system, scanning millions of online resources,
